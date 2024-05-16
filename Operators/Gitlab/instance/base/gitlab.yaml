@@ -47,7 +47,7 @@ spec:
           port: 587
           authentication: 'login'
           user_name: 'chmays@redhat.com'
-          enable_starttls_auto: true
+          starttls_auto: true
           openssl_verify_mode: "peer"
           password:
             secret: "smtp-password"
