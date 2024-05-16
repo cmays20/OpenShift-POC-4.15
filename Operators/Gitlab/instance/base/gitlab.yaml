@@ -37,15 +37,15 @@ spec:
         smtp:
           enabled: true
           address: 'smtp.gmail.com'
-          tls: false
+          tls: true
           port: 587
           authentication: 'login'
           user_name: 'chmays@redhat.com'
           enable_starttls_auto: true
-          openssl_verify_mode: peer
+          openssl_verify_mode: "peer"
           password:
-            secret: 'smtp-password'
-            key: 'password'
+            secret: "smtp-password"
+            key: "password"
       nginx-ingress:
         enabled: false
       certmanager:
