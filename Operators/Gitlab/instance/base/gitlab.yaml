@@ -34,6 +34,15 @@ spec:
             route.openshift.io/termination: "edge"
             kubernetes.io/tls-acme: true
             cert-manager.io/cluster-issuer: acme-prod-issuer
+        smtp:
+          enabled: true
+          address: 'smtp.gmail.com'
+          tls: true
+          authentication: 'plain'
+          user_name: 'chmays@redhat.com'
+          password:
+            secret: 'smtp-password'
+            key: 'password'
       nginx-ingress:
         enabled: false
       certmanager:
