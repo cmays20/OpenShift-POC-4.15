@@ -1,0 +1,35 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+
+resources:
+  - ../base/
+
+patches:
+  - target:
+      group: cert-manager.io
+      version: v1
+      kind: ClusterIssuer
+      name: acme-prod-issuer
+    patch: |-
+      - op: replace
+        path: /spec/acme/email
+        value: 'cmays@outlook.com'
+      - op: replace
+        path: /spec/acme/solvers/0/dns01/route53/hostedZoneID
+        value: Z016905135EO6899RS1YX
+  - target:
+      group: cert-manager.io
+      version: v1
+      kind: Certificate
+      name: router-certs-letsencrypt
+    patch: |-
+      - op: replace
+        path: /spec/commonName
+        value: '*.apps.mays-demo.sandbox1875.opentlc.com'
+      - op: replace
+        path: /spec/dnsNames/0
+        value: '*.apps.mays-demo.sandbox1875.opentlc.com'
