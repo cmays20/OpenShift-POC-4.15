@@ -37,9 +37,11 @@ spec:
         smtp:
           enabled: true
           address: 'smtp.gmail.com'
-          tls: true
-          authentication: 'plain'
+          tls: false
+          port: 587
+          authentication: 'login'
           user_name: 'chmays@redhat.com'
+          enable_starttls_auto: true
           password:
             secret: 'smtp-password'
             key: 'password'
