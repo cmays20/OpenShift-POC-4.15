@@ -11,4 +11,3 @@ spec:
   imagePullPolicy: Always
   runUntagged: true
   token: gitlab-gitlab-runner-secret
-  config: gitlab-runner-config
