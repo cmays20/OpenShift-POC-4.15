@@ -3,3 +3,4 @@ resources:
   - ../../rhacs
   - ../../gitlab
   - ../../gitlab-runner
+  - ../../virtualization
