@@ -37,7 +37,7 @@ spec:
           deviceIndex: 0
           iamInstanceProfile:
             id: <infrastructure_id>-worker-profile
-          instanceType: m6g.metal
+          instanceType: m6i.metal
           kind: AWSMachineProviderConfig
           placement:
             availabilityZone: <zone>
