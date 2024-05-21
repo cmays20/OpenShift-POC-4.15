@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     path: Operators/Gitlab/aggregate
-    repoURL: 'https://github.com/cmays20/OpenShift-POC-4.14.git'
+    repoURL: 'https://github.com/cmays20/OpenShift-POC-4.15.git'
     targetRevision: HEAD
   syncPolicy:
     automated:
