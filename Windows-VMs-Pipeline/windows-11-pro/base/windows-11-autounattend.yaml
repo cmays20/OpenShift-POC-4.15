@@ -30,7 +30,7 @@ data:
                         <CreatePartitions>
                             <CreatePartition wcm:action="add">
                                 <Order>1</Order>
-                                <Size>2048</Size>
+                                <Size>500</Size>
                                 <Type>Primary</Type>
                             </CreatePartition>
                             <CreatePartition wcm:action="add">
@@ -85,6 +85,7 @@ data:
                             <DiskID>0</DiskID>
                             <PartitionID>4</PartitionID>
                         </InstallTo>
+                        <InstallToAvailablePartition>false</InstallToAvailablePartition>
                     </OSImage>
                 </ImageInstall>
                 <RunSynchronous>

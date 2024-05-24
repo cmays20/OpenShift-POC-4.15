@@ -29,7 +29,7 @@ spec:
                   - ReadWriteOnce
                 resources:
                   requests:
-                    storage: 7Gi
+                    storage: 10Gi
                 volumeMode: Filesystem
               source:
                 http:
@@ -66,7 +66,7 @@ spec:
                   - ReadWriteOnce
                 resources:
                   requests:
-                    storage: 20Gi
+                    storage: 100Gi
                 volumeMode: Filesystem
               source:
                 blank: {}
@@ -106,12 +106,12 @@ spec:
                 spec:
                   domain:
                     cpu:
-                     sockets: 2
-                     cores: 1
-                     threads: 1
+                     sockets: 1
+                     cores: 4
+                     threads: 8
                     resources:
                       requests:
-                        memory: 2Gi
+                        memory: 8Gi
                     devices:
                       disks:
                         - name: installcdrom
