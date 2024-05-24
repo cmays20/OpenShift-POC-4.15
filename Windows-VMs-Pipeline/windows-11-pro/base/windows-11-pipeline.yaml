@@ -19,7 +19,10 @@ spec:
             apiVersion: cdi.kubevirt.io/v1beta1
             kind: DataVolume
             metadata:
-             generateName: windows-10-source-
+              annotations:
+                cdi.kubevirt.io/storage.bind.immediate.requested: "true"
+                kubevirt.ui/provider: Microsoft
+              generateName: windows-11-source-
             spec:
               pvc:
                 accessModes:
@@ -53,7 +56,10 @@ spec:
             apiVersion: cdi.kubevirt.io/v1beta1
             kind: DataVolume
             metadata:
-              generateName: windows-10-base-
+              annotations:
+                cdi.kubevirt.io/storage.bind.immediate.requested: "true"
+                kubevirt.ui/provider: Microsoft
+              generateName: windows-11-base-
             spec:
               pvc:
                 accessModes:
