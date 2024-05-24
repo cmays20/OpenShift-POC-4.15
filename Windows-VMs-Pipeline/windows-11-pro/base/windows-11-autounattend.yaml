@@ -85,8 +85,6 @@ data:
                             <DiskID>0</DiskID>
                             <PartitionID>4</PartitionID>
                         </InstallTo>
-                        <InstallToAvailablePartition>false
-                        </InstallToAvailablePartition>
                     </OSImage>
                 </ImageInstall>
                 <UserData>
