@@ -138,6 +138,14 @@ spec:
                   networks:
                     - name: default
                       pod: {}
+                  features:
+                    acpi: {}
+                    smm:
+                      enabled: true
+                  firmware:
+                    bootloader:
+                      efi:
+                        secureBoot: true
                   volumes:
                     - name: installcdrom
                       dataVolume:
