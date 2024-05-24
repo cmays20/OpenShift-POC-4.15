@@ -11,13 +11,13 @@ data:
             <component name="Microsoft-Windows-PnpCustomizationsWinPE" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="amd64" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
                 <DriverPaths>
                     <PathAndCredentials wcm:action="add" wcm:keyValue="1">
-                        <Path>E:\viostor\w11\amd64</Path>
+                        <Path>E:\viostor\w10\amd64</Path>
                     </PathAndCredentials>
                     <PathAndCredentials wcm:action="add" wcm:keyValue="2">
-                        <Path>E:\NetKVM\w11\amd64</Path>
+                        <Path>E:\NetKVM\w10\amd64</Path>
                     </PathAndCredentials>
                     <PathAndCredentials wcm:action="add" wcm:keyValue="3">
-                        <Path>E:\viorng\w11\amd64</Path>
+                        <Path>E:\viorng\w10\amd64</Path>
                     </PathAndCredentials>
                 </DriverPaths>
             </component>
