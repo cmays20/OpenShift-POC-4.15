@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: virtualization
+  name: windows-vm-volume-setup
   namespace: openshift-gitops
 spec:
   destination:
