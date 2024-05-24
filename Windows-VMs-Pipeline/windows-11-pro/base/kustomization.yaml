@@ -1,0 +1,3 @@
+resources:
+  - windows-11-autounattend.yaml
+  - windows-11-pipeline.yaml
