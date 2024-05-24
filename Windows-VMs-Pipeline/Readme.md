@@ -1,0 +1,1 @@
+# Pipeline to create a Source for Windows VM Templates
